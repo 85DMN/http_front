@@ -1,0 +1,197 @@
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.checked{
+    display: flex;
+    width:10%;
+    text-align: center;
+}
+
+.containers {
+    justify-content: center;
+    display: flex;
+    border: 3px solid gray;   
+    width: 500px; 
+}
+
+.container {
+    height: fit-content;
+    display: block; 
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    text-align: center; 
+    width: 90%; 
+}
+
+.element {   
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.effects{
+    width:5%;
+    border: 1px solid green;
+}
+
+.fieldInp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstPart {
+    position: relative;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5px;
+    border-bottom: 10px;
+    margin: 0 auto;
+}
+
+.checked{
+    width: 5%;
+}
+
+.positionz {
+    font-size: 8px;
+}
+
+.time{
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+}
+
+.mnems{
+    display:flex;
+    flex-direction: column;
+    width:70%;
+    margin-left: 5px;
+    text-align: left;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    cursor: pointer;
+    font-size: 12px;
+    font-style: italic;
+    color: blue;
+}
+
+.correct{
+    margin-left: 20px;
+    width:5%;
+    height:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    margin-right: 1px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 10px;
+}
+
+.contT{
+    width: 15%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain{
+    width:5%;
+    height:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    margin-right: 1px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.warning{
+    position: absolute;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 200px;
+    top: 5%;
+    left: 35%;
+    background-color:gainsboro;
+    opacity: 0.7;
+}
+
+.group {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.video {
+    margin-left: 10px;
+}
+
+.audio {
+    margin-right: 10px;
+}
+
+.inputer {
+    margin-top: 5px;    
+    text-align: center;
+}
+
+.modal {
+    position: absolute;
+    width: 250px;
+    padding: 10px;
+    top: 5%;
+    left: 30%;
+    margin-left:10px;
+    margin-top: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color:gainsboro;
+    visibility:hidden;
+    opacity: 0.7;
+}
+
+.notCorrect{
+    font-size: 10px;
+    color: red;
+}
+
+p {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.started {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.fp, .sp {
+    margin-left: 10px;
+}
+
+h4 {
+    margin-left: 5px;
+}
