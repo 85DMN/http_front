@@ -1,19 +1,20 @@
 import logo from '../images/pencil-crayon.png';
 import dater from './dater.js';
-export default function adder(zetter,content,uchet){
-  let result = dater();
+
+export default function adder(ofg){
+  let result = dater(ofg.created);
 
   const parent = document.querySelector('.content');
   let element = document.createElement('div');
   element.classList.add('element');
   element.innerHTML = `
-        <div class='firstPart' id='${uchet}'> 
+        <div class='firstPart' id='${ofg.id}'> 
           <div class='checked'>
-            <input type="checkbox">            
+            <input type="checkbox"'>            
           </div>
           <div class='mnems'
-                data-content = '${content}'>
-            <p>${zetter}</p>
+                data-content = '${ofg.description}'>
+            <p>${ofg.name}</p>
           </div>
           
           <div class='contT'>        

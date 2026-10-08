@@ -13,11 +13,21 @@ export default function delert(z){
         </div>        
     </div>`;
   parent.append(element);
-  element.addEventListener('click', (event)=>{
-    if (event.target.textContent=='Ok'){
-      z.parentNode.remove();
-    }
-    element.remove();
+  return new Promise ((resolve,reject) => {
+    element.addEventListener('click', (event)=>{
+      if (event.target.textContent=='Ok'){
+        
+        z.parentNode.remove();//удаление элемента по ID!!!
 
-  });
+        // console.log(z.id)
+        
+        resolve(z.id)
+      }
+      else{
+        reject(console.log('XЗ'))
+      }
+      element.remove();
+
+    });
+  })
 }

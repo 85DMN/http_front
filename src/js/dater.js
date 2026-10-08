@@ -1,5 +1,6 @@
-export default function dater(){
-  let date = new Date();
+export default function dater(date){
+  date = new Date(date);
+  // console.log(date.toLocaleDateString(), date.toLocaleTimeString())
   let analiz = [
     date.getDate(),date.getMonth()+1,date.getFullYear(),date.getHours(),date.getMinutes()
   ];
